@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.rish.rish_order.mapper.OrderMapper">
+    <select id="selectAll" resultType="com.rish.rish_order.pojo.Order">
+        select * from tb_order where phone_number = #{phoneNumber};
+    </select>
+</mapper>
